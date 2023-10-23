@@ -4,7 +4,6 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.concurrent.TimeUnit;
 
@@ -14,7 +13,7 @@ public class Login {
         WebDriver driver;
         String baseUrl = "https://www.saucedemo.com/";
 
-        WebDriverManager.chromedriver().setup();;
+        WebDriverManager.chromedriver().setup();
 
         driver = new ChromeDriver();
         driver.manage().window().maximize();
